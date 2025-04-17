@@ -561,3 +561,163 @@ c812ff5e95460ae25d235492e7015fc49e60bc62fec9e76074444aeec187b31c
 Последние логи контейнера:
 
 ✅ Обновление завершено успешно!
+Остановка и удаление старого контейнера...
+telegram-bot-container
+telegram-bot-container
+Пересборка образа...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 452B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.9-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.9-slim@sha256:9aa5793609640ecea2f06451a0d6f379330880b413f954933289cf3b27a78567
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 55.33kB 0.0s done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY . .
+#7 DONE 0.1s
+
+#8 [4/4] RUN pip install python-telegram-bot
+#8 2.358 Collecting python-telegram-bot
+#8 2.543   Downloading python_telegram_bot-22.0-py3-none-any.whl (673 kB)
+#8 2.721      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 673.5/673.5 kB 3.8 MB/s eta 0:00:00
+#8 2.851 Collecting httpx~=0.27
+#8 2.895   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#8 2.908      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 7.7 MB/s eta 0:00:00
+#8 3.017 Collecting anyio
+#8 3.060   Downloading anyio-4.9.0-py3-none-any.whl (100 kB)
+#8 3.072      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.9/100.9 kB 10.4 MB/s eta 0:00:00
+#8 3.165 Collecting httpcore==1.*
+#8 3.209   Downloading httpcore-1.0.8-py3-none-any.whl (78 kB)
+#8 3.221      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 8.2 MB/s eta 0:00:00
+#8 3.292 Collecting idna
+#8 3.335   Downloading idna-3.10-py3-none-any.whl (70 kB)
+#8 3.346      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 8.2 MB/s eta 0:00:00
+#8 3.428 Collecting certifi
+#8 3.472   Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+#8 3.485      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.4/166.4 kB 18.3 MB/s eta 0:00:00
+#8 3.564 Collecting h11<0.15,>=0.13
+#8 3.608   Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+#8 3.619      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 6.4 MB/s eta 0:00:00
+#8 3.724 Collecting typing_extensions>=4.5
+#8 3.768   Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+#8 3.783      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 3.3 MB/s eta 0:00:00
+#8 3.851 Collecting exceptiongroup>=1.0.2
+#8 3.895   Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+#8 3.962 Collecting sniffio>=1.1
+#8 4.005   Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#8 4.139 Installing collected packages: typing_extensions, sniffio, idna, h11, exceptiongroup, certifi, httpcore, anyio, httpx, python-telegram-bot
+#8 5.159 Successfully installed anyio-4.9.0 certifi-2025.1.31 exceptiongroup-1.2.2 h11-0.14.0 httpcore-1.0.8 httpx-0.28.1 idna-3.10 python-telegram-bot-22.0 sniffio-1.3.1 typing_extensions-4.13.2
+#8 5.160 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 5.373 
+#8 5.373 [notice] A new release of pip is available: 23.0.1 -> 25.0.1
+#8 5.373 [notice] To update, run: pip install --upgrade pip
+#8 DONE 5.7s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.3s done
+#9 writing image sha256:e50c919902fa2b6874946d7345f7183bead6c2165ab677df917be7363de93c9b done
+#9 naming to docker.io/library/telegram-bot 0.0s done
+#9 DONE 0.4s
+Запуск нового контейнера...
+01970caea3e0a4851ca7fdfb71d4fb2f60a490fbee68e8c9ba7393b17ea62ba0
+Проверка состояния контейнера...
+
+Последние логи контейнера:
+
+✅ Обновление завершено успешно!
+Остановка и удаление старого контейнера...
+telegram-bot-container
+telegram-bot-container
+Пересборка образа...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 452B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.9-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/python:3.9-slim@sha256:9aa5793609640ecea2f06451a0d6f379330880b413f954933289cf3b27a78567
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 40.97kB 0.0s done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY . .
+#7 DONE 0.1s
+
+#8 [4/4] RUN pip install python-telegram-bot
+#8 2.377 Collecting python-telegram-bot
+#8 2.554   Downloading python_telegram_bot-22.0-py3-none-any.whl (673 kB)
+#8 2.733      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 673.5/673.5 kB 3.9 MB/s eta 0:00:00
+#8 2.844 Collecting httpx~=0.27
+#8 2.888   Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#8 2.897      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 9.3 MB/s eta 0:00:00
+#8 2.984 Collecting anyio
+#8 3.027   Downloading anyio-4.9.0-py3-none-any.whl (100 kB)
+#8 3.038      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.9/100.9 kB 12.1 MB/s eta 0:00:00
+#8 3.110 Collecting httpcore==1.*
+#8 3.153   Downloading httpcore-1.0.8-py3-none-any.whl (78 kB)
+#8 3.164      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 8.5 MB/s eta 0:00:00
+#8 3.219 Collecting idna
+#8 3.262   Downloading idna-3.10-py3-none-any.whl (70 kB)
+#8 3.274      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 7.7 MB/s eta 0:00:00
+#8 3.363 Collecting certifi
+#8 3.408   Downloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+#8 3.421      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.4/166.4 kB 16.3 MB/s eta 0:00:00
+#8 3.475 Collecting h11<0.15,>=0.13
+#8 3.518   Downloading h11-0.14.0-py3-none-any.whl (58 kB)
+#8 3.528      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 6.3 MB/s eta 0:00:00
+#8 3.607 Collecting exceptiongroup>=1.0.2
+#8 3.650   Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+#8 3.700 Collecting sniffio>=1.1
+#8 3.743   Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+#8 3.833 Collecting typing_extensions>=4.5
+#8 3.877   Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+#8 3.890      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 4.0 MB/s eta 0:00:00
+#8 4.033 Installing collected packages: typing_extensions, sniffio, idna, h11, exceptiongroup, certifi, httpcore, anyio, httpx, python-telegram-bot
+#8 5.047 Successfully installed anyio-4.9.0 certifi-2025.1.31 exceptiongroup-1.2.2 h11-0.14.0 httpcore-1.0.8 httpx-0.28.1 idna-3.10 python-telegram-bot-22.0 sniffio-1.3.1 typing_extensions-4.13.2
+#8 5.048 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 5.378 
+#8 5.378 [notice] A new release of pip is available: 23.0.1 -> 25.0.1
+#8 5.378 [notice] To update, run: pip install --upgrade pip
+#8 DONE 5.7s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.3s done
+#9 writing image sha256:445fc12b0e9d3f7ea01c100184d823153c99ccf49d31343c817de5b019f9f0e8 done
+#9 naming to docker.io/library/telegram-bot done
+#9 DONE 0.3s
+Запуск нового контейнера...
+d04c74029196d0d15b5c24a60926df5bcf485132349263e727ec5fc70c376670
+Проверка состояния контейнера...
+
+Последние логи контейнера:
+
+✅ Обновление завершено успешно!
