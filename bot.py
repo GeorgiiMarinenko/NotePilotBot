@@ -122,7 +122,7 @@ async def search_notes(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Нет совпадений.")
 
 # Создание приложения и регистрация обработчиков
-app = ApplicationBuilder().token("7022082873:AAF5F-IjhfnYwDZ14uT7IaYXDWxLV3xFDt0").build()
+app = ApplicationBuilder().token("7022082873:AAG7FwskcaY61Xto-usKeHADC2fxy80bzVY").build()
 
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help_command))
