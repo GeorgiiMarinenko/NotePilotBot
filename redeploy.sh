@@ -26,6 +26,7 @@ echo "Запуск нового контейнера..." | tee -a "$LOG_FILE"
 docker run -d \
   --name $CONTAINER_NAME \
   --restart=always \
+  --network=host \
   --memory="512m" \
   --cpus="1" \
   $IMAGE_NAME >> "$LOG_FILE" 2>&1
