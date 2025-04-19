@@ -1,0 +1,48 @@
+Остановка и удаление старого контейнера...
+telegram-bot-container
+telegram-bot-container
+Пересборка образа...
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 186B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.9-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:9aa5793609640ecea2f06451a0d6f379330880b413f954933289cf3b27a78567
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 6.59kB done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#8 CACHED
+
+#9 [5/5] COPY . .
+#9 DONE 0.1s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 writing image sha256:545910abad7befee466ed326cc488959171634644a3d5fce7c5f7139b440b277 done
+#10 naming to docker.io/library/telegram-bot done
+#10 DONE 0.1s
+Запуск нового контейнера...
+01ed26cadbc533952ea6785e4caf13474f78786434fcfef21309f9aa86d6e930
+Проверка состояния контейнера...
+
+Последние логи контейнера:
+
+✅ Обновление завершено успешно!
